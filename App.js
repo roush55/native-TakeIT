@@ -15,25 +15,38 @@
    Text,
    StatusBar,
    TextInput,
-   Image
+   Image,Button
  } from 'react-native';
-  import WelcomeScreen from './app/screens/welcomeScreen';
-  import ViewProduct from './app/screens/viewProduct'
- import Container from './app/screens/Container'
- 
+  import WelcomeScreen from './app/screens/welcomScreen';
+  import ViewProduct from './app/screens/offerScreen/viewProduct'
+ import Container from './app/screens/offerScreen/Container'
+
+import ListItem from './app/components/ListItem/ListItem';
+import MessagesScreen from './app/screens/MsgScreen/MessagesScreen';
+import AccountScreen from './app/screens/AccountScreen/index';
+import ListScreen from './app/screens/ListScreen';
+import AppNavigator from './app/Navigation/AppNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+
+
+
+
+
+
  const App=()=> {
    
-   
-   return (
-   <>
   
-              <WelcomeScreen/> 
-                 {/* <ViewProduct/>   */}
-               {/* <Container/>  */}
+   return (
+ 
+  <NavigationContainer >
+      <AppNavigator/>
+    </NavigationContainer>
+
+
 
  
-     
-       </>
+    
+      
   
    );
  };

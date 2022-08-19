@@ -1,0 +1,138 @@
+$primary: #13a1a0;
+$primary_2: #0bc9c2;
+$primary_3: #142EBC;
+$primary_4: #5DE000;
+$secondary: #6e7799;
+$secondary_2: #E00000;
+$secondary_3: #0F7D88;
+$base: #000000;
+$base_2: #333333;
+$base_3: #444444;
+$base_4: #6b6b6b;
+$base_5: #7C7C7C;
+$base_6: #9A9A9A;
+$base_7: #b3b3b3;
+$base_8: #e5e5e5;
+$base_9: #b0b0b0;
+$base_10: #fff;
+$bgColor: #2b3445;
+$bgColor_2: #202835;
+$bgColor_3: #232e41;
+$bgColor_4: #f3f7fd;
+$bgColor_5: #ffffff;
+$icon: #888888;
+$gradientBlue: #119ad1;
+$gradientGreen: #49caa4;
+$border: #f3f7fd;
+$border_dark: #ECECEC;
+$font_dark: #404040;
+$font_light: #888888;
+$font_lighter: #a6a6a6;
+$form_fields_bg: #f3f7fd;
+$white: #fff;
+$danger: #aa1948;
+$success: #00CC6A;
+$warning: #F69E4C;
+$side_menu_size: 260px;
+$side_menu_size_small: 60px;
+$border_radius: 8px;
+$gray: #6d6d6d;
+$darkgreen: #0f7D88;
+$lightgray: #e5e5e5;
+
+label {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo-text{
+  width: 40px;
+  align-self: center;
+  margin-top: 20px;
+  margin-left: 35px;
+
+  [dir='rtl'] & {
+    margin-right: 35px;
+    margin-left: 0;
+  }
+}
+
+.privateWrapper {
+  &__titleHeader {
+    flex: 0 0 50px;
+  }
+}
+
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #11c4be;
+
+  .poweredByContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+
+    img {
+      margin-left: 5px;
+      width: 80px;
+      height: auto;
+      object-fit: contain;
+
+      [dir='rtl'] & {
+        margin-right: 5px;
+        margin-left: initial;
+      }
+    }
+  }
+}
+
+.sideNavigation:first-child{
+  background: #268f93;
+  width: 100%;
+}
+
+.sideNavigation > :nth-child(1) > :nth-child(2){
+  background: #268f93;
+}
+
+.subNavContainer{
+  background: #268f93 !important;
+}
+
+
+a.active {
+  background: #2eb1b5;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-left: 20px;
+
+  //transition: 300ms;
+
+  [dir='rtl'] & {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+
+
+.activeLink {
+  background: #2eb1b5 !important;
+}
+
+
+
